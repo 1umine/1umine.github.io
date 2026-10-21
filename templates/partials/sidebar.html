@@ -1,0 +1,23 @@
+<aside class="sidebar">
+  <label class="search-label" for="search">寻找一点灵感</label>
+  <div class="search-box">
+    <span aria-hidden="true">⌕</span>
+    <input id="search" type="search" placeholder="搜索文章、标签…" autocomplete="off">
+    <kbd>/</kbd>
+  </div>
+  <p class="search-status" role="status" aria-live="polite"></p>
+  <div class="about-card">
+    <span class="mini-flower" aria-hidden="true">✳</span>
+    <div class="eyebrow">HELLO, I'M {{ authorUpper }}</div>
+    <h3>很高兴在这里遇见你。</h3>
+    <a href="{{ aboutUrl }}">关于这个小站 ↗</a>
+  </div>
+  <section class="tag-section">
+    <h3>标签漫游 <span>↗</span></h3>
+    <div class="tags">{{{ tags }}}</div>
+  </section>
+  <div class="sidebar-note">
+    <span>“</span>
+    <small>KEEP EXPLORING. KEEP WRITING.</small>
+  </div>
+</aside>

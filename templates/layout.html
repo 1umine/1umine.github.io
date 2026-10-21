@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ description }}">
+    <meta name="theme-color" content="#f8f7f3">
+    <title>{{ title }} · {{ siteTitle }}</title>
+    <link rel="icon" href="{{ faviconUrl }}" type="image/svg+xml">
+    <link rel="stylesheet" href="{{ styleUrl }}">
+    {{{ mathStyles }}}
+    <script defer src="{{ scriptUrl }}"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">跳转到内容</a>
+    <header class="header">
+      <a class="brand" href="{{ homeUrl }}"><span class="brand-icon">L<span>✳</span></span>{{ siteTitle }}<span class="brand-dot">.</span></a>
+      <nav aria-label="主导航">
+        <a {{{ homeCurrent }}} href="{{ homeUrl }}">文章</a>
+        <a {{{ archiveCurrent }}} href="{{ archiveUrl }}">归档</a>
+        <a {{{ aboutCurrent }}} href="{{ aboutUrl }}">关于</a>
+      </nav>
+      <span class="header-note"> <span class="status-dot"></span></span>
+    </header>
+    {{{ body }}}
+    <footer>
+      <span>© {{ year }} {{ author }} <span class="footer-dot">·</span> 保持好奇，持续记录。</span>
+      <a href="#">回到顶部 ↑</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<main id="main">
+  <section class="hero">
+    <div>
+      <div class="eyebrow"><span class="status-dot"></span> NOTES, IDEAS & EVERYDAY LIFE</div>
+      <h1>{{ description }}</h1>
+      <a class="hero-link" href="#articles">翻开最近的记录 <span>↘</span></a>
+    </div>
+    <div class="garden" aria-hidden="true">
+      <div class="garden-orbit orbit-one"></div>
+      <div class="garden-orbit orbit-two"></div>
+      <div class="garden-center">✳</div>
+      <span class="garden-label">A LITTLE SPACE FOR BIG IDEAS</span>
+      <span class="garden-star">✦</span>
+    </div>
+  </section>
+  <section class="content-layout" id="articles">
+    <div class="feed">
+      <div class="section-head">
+        <h2>所有文章 <span>{{ paddedCount }}</span></h2>
+        <span class="section-note">一些探索</span>
+      </div>
+      <div class="filters" aria-label="文章分类">
+        <button class="filter active" data-category="" aria-pressed="true">全部 <span>{{ count }}</span></button>
+        {{{ categories }}}
+      </div>
+      <div id="active-tag" hidden></div>
+      <div id="post-list">{{{ cards }}}</div>
+      <p id="empty" {{ emptyHidden }}>还没有找到相关文章。试试其他关键词或分类吧。</p>
+      <p class="feed-end">· 已经翻到最后了，新的故事正在路上 ·</p>
+    </div>
+    {{{ sidebar }}}
+  </section>
+</main>

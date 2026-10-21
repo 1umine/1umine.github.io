@@ -1,0 +1,14 @@
+<article class="post-card" data-category="{{ category }}" data-tags="{{ tagsJson }}" data-search="{{ search }}">
+  <div class="post-meta">
+    <a href="{{ categoryUrl }}">{{ category }}</a>
+    <span>·</span>
+    <time datetime="{{ date }}">{{ displayDate }}</time>
+    <span class="read-time">{{ minutes }} 分钟阅读</span>
+  </div>
+  <h2><a href="{{ href }}">{{ title }}<span class="card-arrow" aria-hidden="true">↗</span></a></h2>
+  <p>{{ description }}</p>
+  <div class="card-bottom">
+    <div class="tags">{{{ tags }}}</div>
+    <span class="article-number">{{ number }}</span>
+  </div>
+</article>

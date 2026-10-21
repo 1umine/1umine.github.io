@@ -1,0 +1,26 @@
+<main id="main" class="article-page">
+  <a class="back-link" href="{{ homeUrl }}">← 回到所有文章</a>
+  <div class="article-layout">
+    <article>
+      <header class="article-header">
+        <div class="post-meta">
+          <a href="{{ categoryUrl }}">{{ category }}</a>
+          <span>·</span>
+          <time datetime="{{ date }}">{{ date }}</time>
+          <span>· {{ minutes }} 分钟阅读</span>
+        </div>
+        <h1>{{ title }}</h1>
+        <p>{{ description }}</p>
+        <div class="tags">{{{ tags }}}</div>
+      </header>
+      <div class="prose">{{{ content }}}</div>
+      <nav class="post-pagination" aria-label="相邻文章">{{{ previous }}}{{{ next }}}</nav>
+    </article>
+    <aside class="toc">
+      <div class="eyebrow">ON THIS PAGE</div>
+      <h2>文章目录</h2>
+      <nav aria-label="文章目录">{{{ headings }}}</nav>
+      <a class="toc-top" href="#">回到顶部 ↑</a>
+    </aside>
+  </div>
+</main>
