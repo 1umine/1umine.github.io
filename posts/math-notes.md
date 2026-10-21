@@ -16,7 +16,12 @@ description: 从行内公式到矩阵与多行推导，用简洁的 LaTeX 语法
 ## 独立公式
 
 用两对美元符号将公式单独放在一个段落中。下面是正态分布的概率密度函数：
-
+```markdown
+$$
+f(x) = \frac{1}{\sigma\sqrt{2\pi}}
+\exp\left(-\frac{(x-\mu)^2}{2\sigma^2}\right)
+$$
+```
 $$
 f(x) = \frac{1}{\sigma\sqrt{2\pi}}
 \exp\left(-\frac{(x-\mu)^2}{2\sigma^2}\right)
@@ -24,6 +29,13 @@ $$
 
 ### 求和与积分
 
+```markdown
+$$
+\sum_{k=1}^{n} k = \frac{n(n+1)}{2}
+\qquad
+\int_0^1 x^2\,\mathrm{d}x = \frac{1}{3}
+$$
+```
 $$
 \sum_{k=1}^{n} k = \frac{n(n+1)}{2}
 \qquad
@@ -33,6 +45,16 @@ $$
 ## 矩阵与多行推导
 
 矩阵可以使用 `bmatrix` 环境：
+
+```markdown
+$$
+A = \begin{bmatrix}
+1 & 2 \\
+3 & 4
+\end{bmatrix}
+\qquad \det(A) = 1\cdot4 - 2\cdot3 = -2
+$$
+```
 
 $$
 A = \begin{bmatrix}
@@ -44,6 +66,14 @@ $$
 
 多行公式使用 `aligned` 环境，通过 `&` 对齐：
 
+```markdown
+$$
+\begin{aligned}
+(a+b)^2 &= (a+b)(a+b) \\
+&= a^2 + 2ab + b^2
+\end{aligned}
+$$
+```
 $$
 \begin{aligned}
 (a+b)^2 &= (a+b)(a+b) \\
@@ -53,6 +83,14 @@ $$
 
 ## 分段函数
 
+```markdown
+$$
+|x| = \begin{cases}
+x, & x \ge 0 \\
+-x, & x < 0
+\end{cases}
+$$
+```
 $$
 |x| = \begin{cases}
 x, & x \ge 0 \\
