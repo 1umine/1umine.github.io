@@ -5,7 +5,7 @@
 ## 效果
 [见 1umine.github.io](https://1umine.github.io) 
 
-![预览](./public/preview.png)
+![预览](./images/preview.png)
 
 ## 本地运行
 

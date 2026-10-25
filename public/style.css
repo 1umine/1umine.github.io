@@ -136,6 +136,13 @@ footer {
   align-items: center;
   gap: 12px;
 }
+.header-star {
+  display: block;
+  width: 28px;
+  height: 28px;
+  background: url("decos/star.svg") center / contain no-repeat;
+  filter: drop-shadow(0 0 2px #6b965a99);
+}
 .status-dot {
   display: inline-block;
   width: 6px;
@@ -144,11 +151,29 @@ footer {
   border-radius: 50%;
 }
 .hero {
+  position: relative;
   display: grid;
-  grid-template-columns: 1fr 360px;
+  grid-template-columns: minmax(0, 620px) 320px;
+  column-gap: 24px;
   align-items: center;
-  padding: 66px 0 62px;
-  border-bottom: 1px solid var(--line);
+  padding: 16px 0 18px;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: -32px;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  background:
+    url("decos/handrail-stars-left.svg") left center / 112px 64px no-repeat,
+    url("decos/handrail-stars-right.svg") right center / 112px 64px no-repeat,
+    url("decos/star.svg") 29% 38% / 28px 28px no-repeat,
+    url("decos/star.svg") 47% 65% / 16px 16px no-repeat,
+    url("decos/star.svg") 71% 46% / 22px 22px no-repeat,
+    url("decos/handrail-divider.svg") center / 720px 32px repeat-x;
+  filter: drop-shadow(0 1px 2px #6d985d80);
+  pointer-events: none;
 }
 .eyebrow {
   font-size: 10px;
@@ -197,10 +222,21 @@ footer {
   color: var(--green);
 }
 .garden {
-  height: 290px;
+  height: 392px;
   position: relative;
   display: grid;
   place-items: center;
+  isolation: isolate;
+  pointer-events: none;
+}
+.garden::before {
+  content: "";
+  position: absolute;
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #dce9c8 0%, #edf1e4 55%, transparent 72%);
+  z-index: -1;
 }
 .garden-orbit {
   position: absolute;
@@ -215,12 +251,13 @@ footer {
   transform: rotate(-35deg);
 }
 .garden-center {
-  font:
-    210px/1 Georgia,
-    serif;
-  color: #6f865b;
-  transform: rotate(12deg);
-  text-shadow: 8px 10px 0 #e5e9da;
+  display: block;
+  width: 180px;
+  height: 360px;
+  object-fit: contain;
+  position: relative;
+  margin-bottom: 18px;
+  filter: drop-shadow(0 8px 12px #52694720);
 }
 .garden-label {
   position: absolute;
@@ -231,10 +268,33 @@ footer {
 }
 .garden-star {
   position: absolute;
-  right: 23px;
-  top: 24px;
-  color: #a9b18c;
-  font-size: 34px;
+  right: 24px;
+  top: 35px;
+  width: 78px;
+  height: 78px;
+  background: url("decos/star.svg") center / contain no-repeat;
+  filter: drop-shadow(0 0 4px #6b965a99);
+  transform: rotate(12deg);
+}
+.garden-star::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 80px;
+  right: -8px;
+  background: inherit;
+  transform: rotate(-25deg);
+}
+.garden-leaves {
+  position: absolute;
+  left: 12px;
+  bottom: 42px;
+  width: 100px;
+  height: 100px;
+  background: url("decos/leaf-pair.svg") center / contain no-repeat;
+  filter: drop-shadow(0 2px 5px #6b965a70);
+  transform: rotate(-18deg);
 }
 .garden-caption {
   position: absolute;
@@ -249,7 +309,7 @@ footer {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 258px;
   gap: 65px;
-  padding-top: 43px;
+  padding-top: 28px;
 }
 .section-head {
   display: flex;
@@ -421,19 +481,38 @@ footer {
   margin: 4px 0 10px;
 }
 .about-card {
-  background: #eef0e7;
-  border: 1px solid #e2e6d8;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background: #304b3c;
+  color: #f1f5e9;
+  border: 1px solid #405c46;
   border-radius: 7px;
   padding: 24px;
   margin-top: 15px;
 }
+.about-card::after {
+  content: "";
+  position: absolute;
+  right: -24px;
+  top: -18px;
+  width: 122px;
+  height: 145px;
+  background: url("decos/leaf.svg") center / contain no-repeat;
+  opacity: .3;
+  transform: rotate(28deg);
+  pointer-events: none;
+  z-index: -1;
+}
 .mini-flower {
   display: block;
-  font: 42px Georgia;
-  color: var(--green);
-  margin-bottom: 18px;
+  width: 58px;
+  height: 58px;
+  background: url("decos/star.svg") center / contain no-repeat;
+  margin: -8px 0 12px -10px;
 }
 .about-card .eyebrow {
+  color: #c0d4ac;
   font-size: 8px;
   letter-spacing: 1.5px;
 }
@@ -450,7 +529,10 @@ footer {
   font-size: 10px;
   display: block;
   margin-top: 20px;
-  color: var(--green);
+  color: #d4e7bc;
+}
+.about-card > a:hover {
+  color: #fff;
 }
 .tag-section {
   margin-top: 32px;
@@ -494,12 +576,23 @@ footer {
   color: #a0a794;
 }
 footer {
+  position: relative;
   border-top: 1px solid var(--line);
   padding: 25px 0 30px;
   display: flex;
   justify-content: space-between;
   font-size: 10px;
   color: var(--muted);
+}
+footer::before {
+  content: "";
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: -23px;
+  left: calc(50% - 22px);
+  background: var(--bg) url("decos/star.svg") center / contain no-repeat;
+  pointer-events: none;
 }
 .footer-dot {
   margin: 0 10px;
@@ -773,10 +866,6 @@ footer {
   footer {
     width: 1180px;
   }
-  .hero {
-    padding-top: 80px;
-    padding-bottom: 75px;
-  }
   .content-layout {
     gap: 85px;
   }
@@ -794,7 +883,8 @@ footer {
     display: none;
   }
   .hero {
-    grid-template-columns: 1fr 260px;
+    grid-template-columns: minmax(0, 1fr) 260px;
+    column-gap: 12px;
   }
   .garden {
     transform: scale(0.85);
@@ -812,6 +902,9 @@ footer {
   }
 }
 @media (max-width: 650px) {
+  .hero::after {
+    background-size: 84px 48px, 84px 48px, 22px 22px, 12px 12px, 18px 18px, 720px 32px;
+  }
   .header,
   main,
   footer {
@@ -830,7 +923,7 @@ footer {
   }
   .hero {
     display: block;
-    padding: 42px 0 35px;
+    padding: 24px 0 18px;
     position: relative;
   }
   .hero h1 {
@@ -845,13 +938,40 @@ footer {
     letter-spacing: 1.3px;
   }
   .garden {
-    display: none;
+    display: grid;
+    width: min(100%, 320px);
+    height: 322px;
+    margin: 4px auto 0;
+    transform: none;
+  }
+  .garden-center {
+    width: 144px;
+    height: 288px;
+  }
+  .garden::before,
+  .orbit-one {
+    width: 220px;
+    height: 220px;
+  }
+  .orbit-two {
+    width: 250px;
+    height: 155px;
+  }
+  .garden-star {
+    width: 60px;
+    height: 60px;
+    right: 16px;
+  }
+  .garden-leaves {
+    width: 78px;
+    height: 78px;
+    left: 10px;
   }
   .content-layout {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    padding-top: 28px;
+    padding-top: 20px;
   }
   .section-note {
     font-size: 9px;

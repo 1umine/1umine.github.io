@@ -5,6 +5,7 @@ export function createPages({ render, config, url, posts, categories, tags }) {
     description: config.description,
     homeUrl: url(""),
     aboutUrl: url("about.html"),
+    nahidaUrl: url("nahida.webp"),
   }
   const categoryUrl = category => `${url("")}?category=${encodeURIComponent(category)}`
   const tagLink = (tag, count) => render("partials/tag", {

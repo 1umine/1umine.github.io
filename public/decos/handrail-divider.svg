@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -32 1440 64" fill="none">
+<title>可无缝拼接的横向荧光藤蔓</title>
+<defs>
+  <linearGradient id="nh-leaf-color" x1=".1" y1="1" x2=".8" y2="0">
+    <stop stop-color="#d5edb3" stop-opacity=".65"/><stop offset=".5" stop-color="#e8f8cf" stop-opacity=".9"/><stop offset="1" stop-color="#f6fbe4"/>
+  </linearGradient>
+  <g id="nh-leaf-geometry">
+    <path d="M 0,0 C -13,-17 -11,-39 5,-45 C 14,-49 22,-45 28,-46 C 25,-37 27,-25 19,-16 C 12,-8 5,-5 0,0 Z" fill="url(#nh-leaf-color)"/>
+    <path d="M 0,0 C 4,-17 14,-34 28,-46 C 13,-38 1,-21 0,0 Z" fill="#f6ffd2" fill-opacity=".63"/>
+    <path d="M 0,0 C -13,-17 -11,-39 5,-45 C 14,-49 22,-45 28,-46" fill="none" stroke="#eef8d9" stroke-width=".8" stroke-opacity=".8"/>
+    <path d="M 0,0 C 4,-17 14,-34 28,-46" fill="none" stroke="#f5ffc7" stroke-width=".8"/>
+  </g>
+  <filter id="glow" x="-10%" y="-100%" width="120%" height="300%" color-interpolation-filters="sRGB">
+    <feGaussianBlur stdDeviation="2"/>
+    <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+
+
+
+<clipPath id="vine-tile"><rect x="0" y="-32" width="480" height="64"/></clipPath>
+</defs>
+<g transform="translate(0 0)"><g clip-path="url(#vine-tile)"><g opacity=".55" filter="url(#glow)">
+  <path d="M -240,0 H 720" stroke="#f3ffce" stroke-width="3"/>
+  <path d="M -240,0 C -200,-18 -160,-18 -120,0 C -80,18 -40,18 0,0 C 40,-18 80,-18 120,0 C 160,18 200,18 240,0 C 280,-18 320,-18 360,0 C 400,18 440,18 480,0 C 520,-18 560,-18 600,0 C 640,18 680,18 720,0" stroke="#e5ffb5" stroke-width="1.5"/>
+  <path d="M -240,0 C -200,-18 -160,-18 -120,0 C -80,18 -40,18 0,0 C 40,-18 80,-18 120,0 C 160,18 200,18 240,0 C 280,-18 320,-18 360,0 C 400,18 440,18 480,0 C 520,-18 560,-18 600,0 C 640,18 680,18 720,0" transform="scale(1 -1)" stroke="#f4ffd0" stroke-width="2.7"/>
+  <path d="M -240,0 C -200,-18 -160,-18 -120,0 C -80,18 -40,18 0,0 C 40,-18 80,-18 120,0 C 160,18 200,18 240,0 C 280,-18 320,-18 360,0 C 400,18 440,18 480,0 C 520,-18 560,-18 600,0 C 640,18 680,18 720,0" transform="scale(1 -1)" stroke="#fdffeb" stroke-width=".7"/>
+  <use href="#nh-leaf-geometry" transform="translate(70 -13) rotate(65) scale(.42)"/>
+  <use href="#nh-leaf-geometry" transform="translate(310 13) rotate(-115) scale(.42)"/>
+</g></g></g>
+<g transform="translate(480 0)"><g clip-path="url(#vine-tile)"><g opacity=".55" filter="url(#glow)">
+  <path d="M -240,0 H 720" stroke="#f3ffce" stroke-width="3"/>
+  <path d="M -240,0 C -200,-18 -160,-18 -120,0 C -80,18 -40,18 0,0 C 40,-18 80,-18 120,0 C 160,18 200,18 240,0 C 280,-18 320,-18 360,0 C 400,18 440,18 480,0 C 520,-18 560,-18 600,0 C 640,18 680,18 720,0" stroke="#e5ffb5" stroke-width="1.5"/>
+  <path d="M -240,0 C -200,-18 -160,-18 -120,0 C -80,18 -40,18 0,0 C 40,-18 80,-18 120,0 C 160,18 200,18 240,0 C 280,-18 320,-18 360,0 C 400,18 440,18 480,0 C 520,-18 560,-18 600,0 C 640,18 680,18 720,0" transform="scale(1 -1)" stroke="#f4ffd0" stroke-width="2.7"/>
+  <path d="M -240,0 C -200,-18 -160,-18 -120,0 C -80,18 -40,18 0,0 C 40,-18 80,-18 120,0 C 160,18 200,18 240,0 C 280,-18 320,-18 360,0 C 400,18 440,18 480,0 C 520,-18 560,-18 600,0 C 640,18 680,18 720,0" transform="scale(1 -1)" stroke="#fdffeb" stroke-width=".7"/>
+  <use href="#nh-leaf-geometry" transform="translate(70 -13) rotate(65) scale(.42)"/>
+  <use href="#nh-leaf-geometry" transform="translate(310 13) rotate(-115) scale(.42)"/>
+</g></g></g>
+<g transform="translate(960 0)"><g clip-path="url(#vine-tile)"><g opacity=".55" filter="url(#glow)">
+  <path d="M -240,0 H 720" stroke="#f3ffce" stroke-width="3"/>
+  <path d="M -240,0 C -200,-18 -160,-18 -120,0 C -80,18 -40,18 0,0 C 40,-18 80,-18 120,0 C 160,18 200,18 240,0 C 280,-18 320,-18 360,0 C 400,18 440,18 480,0 C 520,-18 560,-18 600,0 C 640,18 680,18 720,0" stroke="#e5ffb5" stroke-width="1.5"/>
+  <path d="M -240,0 C -200,-18 -160,-18 -120,0 C -80,18 -40,18 0,0 C 40,-18 80,-18 120,0 C 160,18 200,18 240,0 C 280,-18 320,-18 360,0 C 400,18 440,18 480,0 C 520,-18 560,-18 600,0 C 640,18 680,18 720,0" transform="scale(1 -1)" stroke="#f4ffd0" stroke-width="2.7"/>
+  <path d="M -240,0 C -200,-18 -160,-18 -120,0 C -80,18 -40,18 0,0 C 40,-18 80,-18 120,0 C 160,18 200,18 240,0 C 280,-18 320,-18 360,0 C 400,18 440,18 480,0 C 520,-18 560,-18 600,0 C 640,18 680,18 720,0" transform="scale(1 -1)" stroke="#fdffeb" stroke-width=".7"/>
+  <use href="#nh-leaf-geometry" transform="translate(70 -13) rotate(65) scale(.37)"/>
+  <use href="#nh-leaf-geometry" transform="translate(310 13) rotate(-115) scale(.43)"/>
+</g></g></g>
+</svg>

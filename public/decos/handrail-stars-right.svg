@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 80" fill="none"><title>藤蔓端点星簇</title>
+<defs>  <radialGradient id="nh-star-color" cx="0" cy="0" r="54" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#f9ffde"/><stop offset=".65" stop-color="#fcffe9"/><stop offset="1" stop-color="#fffff7"/>
+  </radialGradient>
+  <filter id="nh-glow" x="-80%" y="-80%" width="260%" height="260%" color-interpolation-filters="sRGB">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="wide"/>
+    <feFlood flood-color="#a9ff54" flood-opacity=".65"/><feComposite in2="wide" operator="in" result="halo"/>
+    <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" result="near"/>
+    <feMerge><feMergeNode in="halo"/><feMergeNode in="near"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <g id="nh-star-geometry">
+    <path d="M 0,-54 C 15,-42 23,-29 18,-18 C 29,-23 42,-15 54,0 C 42,15 29,23 18,18 C 23,29 15,42 0,54 C -15,42 -23,29 -18,18 C -29,23 -42,15 -54,0 C -42,-15 -29,-23 -18,-18 C -23,-29 -15,-42 0,-54 Z" fill="#d9ff8c" fill-opacity=".13"/>
+    <path d="M 0,-54 C 15,-42 23,-29 18,-18 C 29,-23 42,-15 54,0 C 42,15 29,23 18,18 C 23,29 15,42 0,54 C -15,42 -23,29 -18,18 C -29,23 -42,15 -54,0 C -42,-15 -29,-23 -18,-18 C -23,-29 -15,-42 0,-54 Z M 0,-47 C -14,-34 -14,-19 0,-4 C 14,-19 14,-34 0,-47 Z M 47,0 C 34,-14 19,-14 4,0 C 19,14 34,14 47,0 Z M 0,47 C 14,34 14,19 0,4 C -14,19 -14,34 0,47 Z M -47,0 C -34,14 -19,14 -4,0 C -19,-14 -34,-14 -47,0 Z" fill="url(#nh-star-color)" fill-rule="evenodd" stroke="#fffff5" stroke-width=".65" stroke-linejoin="round"/>
+    <path d="M 0,-54 C 15,-42 23,-29 18,-18 C 29,-23 42,-15 54,0 C 42,15 29,23 18,18 C 23,29 15,42 0,54 C -15,42 -23,29 -18,18 C -29,23 -42,15 -54,0 C -42,-15 -29,-23 -18,-18 C -23,-29 -15,-42 0,-54 Z" fill="none" stroke="#fffffa" stroke-width="1.3" stroke-linejoin="round"/>
+  </g></defs>
+<g filter="url(#nh-glow)"><use href="#nh-star-geometry" transform="translate(104 39) rotate(-7) scale(0.46)"/>
+<use href="#nh-star-geometry" transform="translate(61 57) rotate(16) scale(0.18)"/>
+<use href="#nh-star-geometry" transform="translate(39 31) rotate(-22) scale(0.12)"/>
+<use href="#nh-star-geometry" transform="translate(78 17) rotate(12) scale(0.1)"/></g>
+</svg>
