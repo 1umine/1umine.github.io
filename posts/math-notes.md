@@ -3,7 +3,7 @@ title: 数学公式
 date: 2026-10-20
 category: 技术探索
 tags: [demo]
-description: 从行内公式到矩阵与多行推导，用简洁的 LaTeX 语法，清楚表达那些值得记录的数学想法。
+description: 在文章中使用 LaTeX 语法。
 ---
 ## 行内公式
 

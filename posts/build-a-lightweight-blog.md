@@ -3,7 +3,7 @@ title: Markdown 写作
 date: 2026-10-18
 category: 技术探索
 tags: [demo]
-description: 让写作回到文字本身。从一份 Markdown 文件开始，理解这个轻量博客的内容组织与发布方式。
+description: 从一份 Markdown 文件开始，理解这个博客的内容组织与发布方式。
 ---
 ## 从一份文件开始
 

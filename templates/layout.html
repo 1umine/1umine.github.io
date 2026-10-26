@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ description }}">
-    <meta name="theme-color" content="#f8f7f3">
+    <meta name="theme-color" content="#f5f8ee">
     <title>{{ title }} · {{ siteTitle }}</title>
     <link rel="icon" href="{{ faviconUrl }}" type="image/svg+xml">
     <link rel="stylesheet" href="{{ styleUrl }}">
@@ -24,6 +24,13 @@
     </header>
     {{{ body }}}
     <footer>
+      <div class="footer-divider" aria-hidden="true">
+        <span class="footer-star star-large"></span>
+        <span class="footer-rule"></span>
+        <span class="footer-star star-medium"></span>
+        <span class="footer-rule"></span>
+        <span class="footer-star star-large"></span>
+      </div>
       <span>© {{ year }} {{ author }} <span class="footer-dot">·</span> 保持好奇，持续记录。</span>
       <a href="#">回到顶部 ↑</a>
     </footer>

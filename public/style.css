@@ -1,10 +1,12 @@
 :root {
-  --bg: #f8f7f3;
-  --ink: #29372e;
-  --muted: #7a8078;
-  --green: #477153;
-  --line: #e3e5db;
-  --soft: #edf0e7;
+  --bg: #f5f8ee;
+  --ink: #283e30;
+  --muted: #63765d;
+  --green: #426b32;
+  --line: #d5e2c4;
+  --soft: #e8f0da;
+  --surface: #fbfdf5;
+  --gold: #a08e4b;
   --serif: Georgia, "Songti SC ", "Noto Serif CJK SC", SimSun, serif;
 }
 * {
@@ -53,7 +55,7 @@ input:focus-visible {
   outline-offset: 5px;
 }
 ::selection {
-  background: #d6e3cc;
+  background: #d7e9b7;
 }
 [hidden] {
   display: none !important;
@@ -65,7 +67,7 @@ footer {
   margin-inline: auto;
 }
 .header {
-  height: 104px;
+  height: 80px;
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--line);
@@ -111,7 +113,7 @@ footer {
   display: flex;
   align-items: center;
   position: relative;
-  font-size: 13px;
+  font-size: 16px;
   color: var(--muted);
 }
 .header nav a[aria-current] {
@@ -147,7 +149,7 @@ footer {
   display: inline-block;
   width: 6px;
   height: 6px;
-  background: #769269;
+  background: #86a956;
   border-radius: 50%;
 }
 .hero {
@@ -200,7 +202,7 @@ footer {
   left: 0;
   width: 100%;
   height: 8px;
-  border-top: 2px solid #9caa7d;
+  border-top: 2px solid #b2a35b;
   border-radius: 50%;
   transform: rotate(-2deg);
 }
@@ -235,14 +237,14 @@ footer {
   width: 270px;
   height: 270px;
   border-radius: 50%;
-  background: radial-gradient(circle, #dce9c8 0%, #edf1e4 55%, transparent 72%);
+  background: radial-gradient(circle, #d6eab5 0%, #edf5dc 55%, transparent 72%);
   z-index: -1;
 }
 .garden-orbit {
   position: absolute;
   width: 242px;
   height: 242px;
-  border: 1px solid #dce0d3;
+  border: 1px solid #d1dfb5;
   border-radius: 50%;
 }
 .orbit-two {
@@ -257,7 +259,7 @@ footer {
   object-fit: contain;
   position: relative;
   margin-bottom: 18px;
-  filter: drop-shadow(0 8px 12px #52694720);
+  filter: drop-shadow(0 8px 12px #46672c24);
 }
 .garden-label {
   position: absolute;
@@ -303,7 +305,7 @@ footer {
   left: 18px;
   top: 50px;
   letter-spacing: 5px;
-  color: #909b80;
+  color: #778259;
 }
 .content-layout {
   display: grid;
@@ -362,7 +364,7 @@ footer {
   background: var(--soft);
 }
 .post-card {
-  padding: 29px 0 27px;
+  padding: 20px 0 16px;
   border-bottom: 1px solid var(--line);
 }
 .post-meta {
@@ -392,7 +394,7 @@ footer {
 }
 .card-arrow {
   font: 20px system-ui;
-  color: #99a58d;
+  color: #819654;
   transition: transform 0.2s;
 }
 .post-card:hover .card-arrow {
@@ -416,24 +418,24 @@ footer {
 }
 .tag {
   background: var(--soft);
-  color: #77816e;
+  color: #586f45;
   border-radius: 4px;
   padding: 3px 8px;
   font-size: 10px;
 }
 .tag:hover {
-  background: #dde5d3;
+  background: #d9e8bf;
   color: var(--green);
 }
 .article-number {
   font: italic 12px Georgia;
-  color: #a6ad9e;
+  color: #7b875c;
 }
 .feed-end {
   text-align: center;
   font-size: 10px;
   letter-spacing: 1px;
-  color: #9ba192;
+  color: #75835f;
   margin: 36px 0 55px;
 }
 .sidebar {
@@ -451,7 +453,7 @@ footer {
   border-radius: 6px;
   padding: 8px 12px;
   margin-top: 12px;
-  background: #fcfbf8;
+  background: var(--surface);
 }
 .search-box > span {
   font-size: 23px;
@@ -468,7 +470,7 @@ footer {
   outline-offset: 1px;
 }
 .search-box kbd {
-  color: #9ba192;
+  color: #75835f;
   border: 1px solid var(--line);
   border-radius: 3px;
   font-size: 10px;
@@ -484,9 +486,9 @@ footer {
   position: relative;
   overflow: hidden;
   isolation: isolate;
-  background: #304b3c;
-  color: #f1f5e9;
-  border: 1px solid #405c46;
+  background: #2e4d38;
+  color: #f2f7e5;
+  border: 1px solid #496640;
   border-radius: 7px;
   padding: 24px;
   margin-top: 15px;
@@ -494,7 +496,7 @@ footer {
 .about-card::after {
   content: "";
   position: absolute;
-  right: -24px;
+  right: -27px;
   top: -18px;
   width: 122px;
   height: 145px;
@@ -504,15 +506,29 @@ footer {
   pointer-events: none;
   z-index: -1;
 }
+.about-card::before {
+  content: "";
+  position: absolute;
+  right: 8px;
+  bottom: -10px;
+  width: 76px;
+  height: 60px;
+  background: url("decos/leaf-pair.svg") center / contain no-repeat;
+  opacity: .65;
+  transform: rotate(-12deg);
+  pointer-events: none;
+  z-index: -1;
+}
 .mini-flower {
   display: block;
   width: 58px;
   height: 58px;
   background: url("decos/star.svg") center / contain no-repeat;
+  filter: drop-shadow(0 0 2px #82c94b99) drop-shadow(0 0 5px #a6e86b66);
   margin: -8px 0 12px -10px;
 }
 .about-card .eyebrow {
-  color: #c0d4ac;
+  color: #c4dda4;
   font-size: 8px;
   letter-spacing: 1.5px;
 }
@@ -529,7 +545,7 @@ footer {
   font-size: 10px;
   display: block;
   margin-top: 20px;
-  color: #d4e7bc;
+  color: #e0edb7;
 }
 .about-card > a:hover {
   color: #fff;
@@ -553,7 +569,7 @@ footer {
   padding: 5px 9px;
 }
 .tag small {
-  color: #9ca58f;
+  color: #758459;
   margin-left: 5px;
 }
 .sidebar-note {
@@ -563,36 +579,48 @@ footer {
 }
 .sidebar-note > span {
   font: 39px Georgia;
-  color: #9ba88c;
+  color: var(--gold);
 }
 .sidebar-note p {
   font: 15px/1.9 var(--serif);
-  color: #8a937f;
+  color: #697b53;
   margin: 0 0 18px;
 }
 .sidebar-note small {
   font-size: 7px;
   letter-spacing: 1.3px;
-  color: #a0a794;
+  color: #78845d;
 }
 footer {
   position: relative;
-  border-top: 1px solid var(--line);
   padding: 25px 0 30px;
   display: flex;
   justify-content: space-between;
   font-size: 10px;
   color: var(--muted);
 }
-footer::before {
-  content: "";
+.footer-divider {
   position: absolute;
-  width: 44px;
+  top: -22px;
+  left: 0;
+  width: 100%;
   height: 44px;
-  top: -23px;
-  left: calc(50% - 22px);
-  background: var(--bg) url("decos/star.svg") center / contain no-repeat;
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr) 24px minmax(0, 1fr) 36px;
+  align-items: center;
+  gap: 0;
   pointer-events: none;
+}
+.footer-star {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  background: url("decos/star.svg") center / contain no-repeat;
+  filter: drop-shadow(0 0 2px #82c94b99) drop-shadow(0 0 5px #a6e86b66);
+}
+.footer-rule {
+  height: 1px;
+  background: var(--line);
 }
 .footer-dot {
   margin: 0 10px;
@@ -630,7 +658,7 @@ footer::before {
   padding-top: 36px;
 }
 .back-link {
-  font-size: 12px;
+  font-size: 18px;
   color: var(--muted);
 }
 .article-layout {
@@ -657,7 +685,7 @@ footer::before {
 }
 .prose {
   font-size: 15px;
-  line-height: 2;
+  line-height: 1.6;
   overflow-wrap: anywhere;
 }
 .prose h1,
@@ -683,18 +711,18 @@ footer::before {
   text-underline-offset: 4px;
 }
 .prose blockquote {
-  border-left: 3px solid #8ba278;
+  border-left: 3px solid #8fab60;
   background: var(--soft);
   margin: 24px 0;
   padding: 12px 24px;
-  color: #62745a;
+  color: #536e40;
 }
 .prose blockquote p {
   margin: 5px 0;
 }
 .prose pre {
   position: relative;
-  background: #eef0e9;
+  background: #edf3e2;
   border: 1px solid var(--line);
   padding: 24px;
   border-radius: 7px;
@@ -742,7 +770,7 @@ footer::before {
   right: 8px;
   top: 8px;
   font-size: 10px;
-  border: 1px solid #d2d8c9;
+  border: 1px solid #c8d9b3;
   border-radius: 4px;
   background: var(--bg);
   color: var(--green);
@@ -751,21 +779,21 @@ footer::before {
 .hljs-keyword,
 .hljs-selector-tag,
 .hljs-literal {
-  color: #995a6c;
+  color: #885c79;
 }
 .hljs-string,
 .hljs-attr {
-  color: #487b58;
+  color: #42703c;
 }
 .hljs-number,
 .hljs-built_in {
-  color: #a67435;
+  color: #896c2f;
 }
 .hljs-comment {
-  color: #8b9486;
+  color: #6a7b60;
 }
 .hljs-title {
-  color: #507c94;
+  color: #43786c;
 }
 .toc {
   align-self: start;
@@ -775,15 +803,15 @@ footer::before {
   padding-left: 22px;
 }
 .toc .eyebrow {
-  font-size: 8px;
+  font-size: 16px;
 }
 .toc h2 {
-  font-size: 12px;
+  font-size: 18px;
   margin: 10px 0 20px;
 }
 .toc nav a {
   display: block;
-  font-size: 11px;
+  font-size: 16px;
   color: var(--muted);
   margin: 12px 0;
   padding-left: calc(max(0, var(--level) - 2) * 12px);
@@ -796,7 +824,7 @@ footer::before {
 .toc-top {
   display: block;
   margin-top: 25px;
-  font-size: 10px;
+  font-size: 14px;
   color: var(--muted);
 }
 .post-pagination {
@@ -1098,12 +1126,17 @@ footer::before {
   margin: 1.5em 0;
 }
 .prose .katex {
-  font-size: 1.08em;
+  font-size: 1.2em;
 }
 .prose .katex-display > .katex {
+  font-size: 1.2em;
   white-space: nowrap;
 }
 .prose .katex-error {
   white-space: pre-wrap;
   overflow-wrap: anywhere;
+}
+.katex-block .katex-display {
+  margin: 0.5em 0;
+  padding: 8px 3px;
 }
